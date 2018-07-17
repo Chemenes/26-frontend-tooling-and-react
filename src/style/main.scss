@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Knewave);
+
+$gaegu: 'Gaegu';
+
+body {
+  background-color: #451aa9;
+  font-family: 'Knewave', cursive;
+  color: #7fc85b;
+
+  .cowsay {
+
+    label, button {
+      display: block;
+    }
+
+    ul {
+      display: inline-block;
+    }
+  }
+}
