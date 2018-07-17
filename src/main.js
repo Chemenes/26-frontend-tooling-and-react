@@ -64,24 +64,30 @@ class App extends React.Component {
     this.setState((previousState) => {
       const firstItems = previousState.firstItems.concat(this.state.first);
       const secondItems = previousState.secondItems.concat(this.state.second);
+      const newMessage = this.getIntersection(firstItems, secondItems);
       // TODO: change the message property
       return {
         firstItems,
         secondItems,
-        message: 'You dun did it',
         first: '',
         second: '',
+        message: newMessage,
       };
     });
   }
 
   // TODO: write out the logic to find the common values between your two lists and render that as a comma-separated string that is listed in the cowsay bubble. If there are no common values, the cow's text should remain the defaulted this.state.message. You may have to add a new property to your state or modify another property already provided to you
 
-  getIntersection = (firstItems, secondItems) => {
-   
-   
+  // getIntersection = (arr1, arr2) => {
+  //  const matches = [];
+  //  for (let i =0; i <arr1.length; i++) {
+  //    for (let j =0; j < arr2.length j++) {
+  //      if (arr1[i] === arr2[j]);
+  //    }
+  //  }
+  //  return matches;
 
-  }
+  // }
 
   render() {
     // React.Fragment is also used to wrap HTML tags without using extra divs/sections
