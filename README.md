@@ -2,5 +2,5 @@
 
 
 ####  Documentation  
-Write a description of the project in your README.md
+Cow animation created to combine Scss and javascript to render message
 
